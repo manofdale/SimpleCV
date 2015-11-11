@@ -64,7 +64,7 @@ class Font:
         path of the truetype font file.
         Example: Font.setFont("/home/simplecv/my_font.ttf")
         """
-        if isinstance(new_font, basestring):
+        if not isinstance(new_font, basestring):
             print "Please pass a string"
             return None
 
